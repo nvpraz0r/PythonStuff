@@ -1,2 +1,2 @@
 def random_func():
-    pass
+    print("Hello World")
