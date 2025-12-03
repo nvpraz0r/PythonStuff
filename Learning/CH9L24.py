@@ -29,11 +29,11 @@ def filter_messages(messages):
         
         # 2e. join the list of good words into a single
         # string using the .join() string method
-        sentance = " ".join(good_words)
+        sentence = " ".join(good_words)
 
         # 2f. append the new filtered message to the array
         # of filtered messages
-        filtered_messages_array.append(sentance)
+        filtered_messages_array.append(sentence)
 
         # 2g. append the length of the list of bad words
         # to the array that counts the number of bad words
