@@ -1,28 +1,45 @@
+# !~ read the comments ~!
+# each comment is a step in the assignment
+# followed by it's code counterpart
+
 def filter_messages(messages):
-    # variables
+    # 1. create two empty arrays
     filtered_messages_array : list = []
     num_of_dangs_array : list = []
 
-    print()
-    print("BEFORE LOOP")
-    for i in messages:
+    # 2. loop over the array of messages for each message
+    for message in messages:
+        # 2a. split the message string into an array
+        # of words using the .split() string method 
+        words = message.split()
+
+        # 2b. create an empty array for the good words
         good_words = []
+        # 2c. create an empty array for the bad words
         bad_words = []
 
-        i.split()
+        # 2d. for each word in the message
+        for word in words:
+            # 2di. if the word is dang add it to the array of bad words
+            if word == "dang":
+                bad_words.append(word)
+            # 2dii. if the word is not dang add it to the array of good words
+            else:
+                good_words.append(word)
         
-        for j in i:
-            if j == dang:
-                i.pop(j)
-                num_of_dangs_array
+        # 2e. join the list of good words into a single
+        # string using the .join() string method
+        sentance = " ".join(good_words)
 
+        # 2f. append the new filtered message to the array
+        # of filtered messages
+        filtered_messages_array.append(sentance)
 
+        # 2g. append the length of the list of bad words
+        # to the array that counts the number of bad words
+        num_of_dangs_array.append(len(bad_words))
 
-
-    print("AFTER LOOP")
-    print()
-
-
+    # 3. return the filtered messages, then the number of "dangs"
     return filtered_messages_array, num_of_dangs_array
 
 
