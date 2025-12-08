@@ -1,19 +1,37 @@
 # 
-# stumped on this problem will return
+# tired of working on this, moving on
 # 
 def check_ingredient_match(recipe, inventory):
 
     result : float = 0.00
-    missing_ingredients = []
+    # missing_ingredients = inventory
 
-    print("MY LOOP STARTS")
-
+    print("MY STUFF STARTS")
+    print("PRINTING inventory")
     for i in inventory:
-        if recipe == inventory[recipe]:
-            print(recipe)
+        print(i)
 
-    print("MY LOOP ENDS")
-    return result, missing_ingredients
+    print("PRINTING recipe")
+    for i in recipe:
+        print(i)
+
+    # print("algorithm working")
+    # for i in inventory:
+    #     for j in recipe:
+    #         if j == i:
+    #             inventory.remove(i)
+    # print("algorithm done")
+
+    print("algorithm working")
+    for i in recipe:
+        for j in inventory:
+            if j == i:
+                recipe.remove(i)
+    print("algorithm done")
+
+
+    print("MY STUFF ENDS")
+    return result, inventory
 
 
 run_cases = [
