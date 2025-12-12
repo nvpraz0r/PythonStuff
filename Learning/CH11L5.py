@@ -1,5 +1,23 @@
+
+# pretty proud of this one
+
 def count_vowels(text):
-    pass
+    
+    vowels = {"A", "E", "I", "O", "U", "a", "e", "i", "o", "u"}
+    unique = set()
+
+    idx = 0
+
+    for char in text:
+        if char in vowels:
+            idx += 1
+        if char not in unique and char in vowels:
+            unique.add(char)
+
+
+
+
+    return idx, unique
 
 
 run_cases = [
