@@ -1,5 +1,11 @@
 def process_player_record(player_id):
-    pass
+    try:
+        return get_player_record(player_id)
+    except IndexError:
+        return "index is too high"
+    except Exception as e:
+        return e
+
 
 
 # Don't edit below this line
