@@ -3,7 +3,7 @@ class Wall:
     height = 5
 
     def get_cost(self):
-        pass
+        return self.armor * self.height
 
     # don't touch below this line
 
