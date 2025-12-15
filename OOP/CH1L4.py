@@ -1,12 +1,18 @@
 def fight_soldiers(soldier_one, soldier_two):
-    soldier_one_dps = soldier_one["damage"] * soldier_one["attacks_per_second"]
-    soldier_two_dps = soldier_two["damage"] * soldier_two["attacks_per_second"]
+    # reworked soldier dps to fit with DRY
+    soldier_one_dps = get_soldier_dps(soldier_one)
+    soldier_two_dps = get_soldier_dps(soldier_two)
+
+
     if soldier_one_dps > soldier_two_dps:
         return "soldier 1 wins"
     if soldier_two_dps > soldier_one_dps:
         return "soldier 2 wins"
     return "both soldiers die"
 
+# my func
+def get_soldier_dps(soldier_dps):
+    return soldier_dps["damage"] * soldier_dps["attacks_per_second"]
 
 
 
