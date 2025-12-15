@@ -1,9 +1,11 @@
 class Wall:
-    pass
+    armor = 10
+    height = 5
 
 
 class BatteringRam:
-    pass
+    damage = 2
+    length = 4
 
 
 
