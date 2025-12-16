@@ -1,5 +1,11 @@
 def main():
-    pass
+    brawler1 = Brawler("Aragorn", 4, 4)
+    brawler2 = Brawler("Gimli", 2, 7)
+    brawler3 = Brawler("Legolas", 7, 7)
+    brawler4 = Brawler("Frodo", 3, 2)
+
+    fight(brawler1, brawler2)
+    fight(brawler3, brawler4)
 
 
 # don't touch below this line
