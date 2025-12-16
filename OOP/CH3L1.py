@@ -1,6 +1,11 @@
 class Wizard:
     def __init__(self, name, stamina, intelligence):
-        pass
+        self.name = name
+        self.health = stamina * 100
+        self.mana = intelligence * 10
+
+        self.__stamina = stamina
+        self.__intelligence = intelligence
 
 
 
