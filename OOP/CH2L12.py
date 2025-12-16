@@ -1,22 +1,41 @@
 class Book:
     def __init__(self, title, author):
-        pass
+        self.title = title
+        self.author = author
 
 
 class Library:
     def __init__(self, name):
-        pass
+        self.name = name
+        self.books = []
 
     def add_book(self, book):
-        pass
+        self.books.append(book)
 
     def remove_book(self, book):
-        pass
+        books_to_keep = []
+        
+        for bk in self.books:
+            if bk.title == book.title or bk.author == book.author:
+                continue
+            else:
+                books_to_keep.append(bk)
+        
+        self.books = books_to_keep
 
     def search_books(self, search_string):
-        pass
+        books_to_return = []
 
+        for bk in self.books:
+            if (
+                search_string.lower() in bk.title.lower()
+                or
+                search_string.lower() in bk.author.lower()
 
+            ):
+                books_to_return.append(bk)
+                
+        return books_to_return
 
 
 
