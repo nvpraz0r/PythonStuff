@@ -9,10 +9,14 @@ class Wizard:
     # don't touch above this line
 
     def get_fireballed(self, fireball_damage):
-        pass
+        fireball_damage -= self.__stamina
+        self.health -= fireball_damage
+
+
 
     def drink_mana_potion(self, potion_mana):
-        pass
+        potion_mana += self.__intelligence
+        self.mana += potion_mana
 
 
 
