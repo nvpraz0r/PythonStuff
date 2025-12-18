@@ -5,19 +5,19 @@ class Human:
         self.__speed = speed
 
     def move_right(self):
-        pass
+        self.__pos_x += self.__speed
 
     def move_left(self):
-        pass
+        self.__pos_x -= self.__speed
 
     def move_up(self):
-        pass
+        self.__pos_y += self.__speed
 
     def move_down(self):
-        pass
+        self.__pos_y -= self.__speed
 
     def get_position(self):
-        pass
+        return (self.__pos_x, self.__pos_y)
 
 
 
