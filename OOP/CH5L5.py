@@ -30,7 +30,7 @@ class Crossbowman(Archer):
 
     def triple_shot(self, target):
         self.num_arrows -= 3
-        return (f"{target} was shot by 3 crossbow bolts")
+        return (f"{target.get_name()} was shot by 3 crossbow bolts")
 
 
 
