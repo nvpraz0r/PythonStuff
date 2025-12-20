@@ -18,15 +18,19 @@ class Archer(Human):
         return self.__num_arrows
 
     def use_arrows(self, num):
-        pass
+        if num > self.__num_arrows:
+            raise Exception("not enough arrows")
+        else:
+            self.__num_arrows -= num
 
 
 class Crossbowman(Archer):
     def __init__(self, name, num_arrows):
-        pass
+        super().__init__(name, num_arrows)
 
     def triple_shot(self, target):
-        pass
+        self.num_arrows = self.use_arrows(3)
+        return f"{target.get_name()} was shot by 3 crossbow bolts"
 
 
 
