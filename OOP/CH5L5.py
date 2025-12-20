@@ -30,6 +30,7 @@ class Crossbowman(Archer):
 
     def triple_shot(self, target):
         self.num_arrows = self.use_arrows(3)
+        # called the get name function from the target
         return f"{target.get_name()} was shot by 3 crossbow bolts"
 
 
