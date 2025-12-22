@@ -6,7 +6,10 @@
 
 class Rectangle:
     def overlaps(self, rect):
-        pass
+        print("inc")
+        print(rect)
+        
+
 
     # don't touch below this line
 
