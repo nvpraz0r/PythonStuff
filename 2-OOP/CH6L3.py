@@ -8,6 +8,20 @@ class Rectangle:
     def overlaps(self, rect):
         print("inc")
         print(rect)
+
+        var = self.get_left_x()
+        print(rect.get_left_x())
+        print(rect.get_right_x())
+
+        print(var)
+
+        # x3 = self.get_left_x > rect.get_right_x
+
+        # if x3 == True:
+        #     print("asdf")
+
+
+
         
 
 
