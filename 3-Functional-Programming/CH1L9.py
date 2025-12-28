@@ -1,5 +1,7 @@
 def format_line(line):
-    return f"{line.rstrip().capitalize().replace(',', '')}...."
+    # original line below
+    # return f"{line.rstrip().capitalize().replace(',', '')}...."
+    return f"{line.strip().upper().replace('.', '')}..."
 
 
 
