@@ -14,8 +14,8 @@ def get_median_font_size(font_sizes):
 
     if len(myarr) % 2 == 0:
         # return smaller of the two median numbers
-        left_middle_num = int(len(myarr) / 2)
-        return myarr[left_middle_num - 1] # fix this line please -> shouldn't have to subtract 1 to get the index I want
+        left_middle_num = int(len(myarr) // 2)
+        return myarr[left_middle_num - 1]
     else:
         # return median number
         middle_num = int(len(myarr) / 2)
