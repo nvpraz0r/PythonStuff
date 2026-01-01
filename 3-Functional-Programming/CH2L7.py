@@ -9,7 +9,7 @@ def join_first_sentences(sentences, n):
     
     if n == 0: return ""
 
-    result = functools.reduce(join, sentences[n:])
+    result = functools.reduce(join, sentences[:n])
 
     return result + "."
 
