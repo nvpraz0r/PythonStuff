@@ -1,12 +1,33 @@
 def remove_invalid_lines(document):
-    split_em = document.splitlines(True)
-    print("asdf")
-    print(split_em)
-    filtered = list(filter(remove_dash_lines,split_em))
-    return filtered
+    # old code before I saw the light
+    # separated_lines = document.split("\n")
+    # for item in separated_lines:
+    #     if item.startswith("\n"):
+    #         pass
+    #     else:
+    #         filtered_lines = list(filter(remove_dash_lines, separated_lines))
+    # "\n".join(filtered_lines)
 
-def remove_dash_lines(line):
-    return line.startswith("-")
+    
+    # def does_have_star(line):
+    #     return line.startswith("*")
+
+    # lasthopesquad = ("\n", "*")
+
+    seperated_list = document.split("\n")
+
+    filtered_list = list(filter(lambda i : not i.startswith("-"), seperated_list))
+
+    "\n".join(filtered_list)
+
+    return filtered_list
+
+# proposed "answer"
+# def remove_invalid_lines(document):
+#     return "\n".join(
+#         filter(lambda line: not line.startswith("-"), document.split("\n"))
+#     )
+
 
 
 run_cases = [
