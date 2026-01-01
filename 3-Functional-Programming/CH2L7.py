@@ -2,12 +2,20 @@ import functools
 
 
 def join(doc_so_far, sentence):
-    pass
+    return doc_so_far + ". " + sentence
 
 
 def join_first_sentences(sentences, n):
-    pass
+    
+    if n == 0: return ""
 
+    result = functools.reduce(join, sentences[n:])
+
+    return result + "."
+
+    # [n:]
+    # numbers = [1, 2, 3, 4]
+    # sum = functools.reduce(add, numbers)
 
 run_cases = [
     (
