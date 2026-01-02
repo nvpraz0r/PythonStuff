@@ -1,9 +1,24 @@
+# 
+# ASSIGNMENT:
+# complete the restore_documents function in one line - if you can.
+# It takes two tuples of document strings, originals and backups,
+# as input and returns a set.
+# 
+# 1. Convert all documents to the same case with .upper() for comparison
+# 2. Filter out documents that are corrupted strings of random numbers with .isdigit()
+# 3. Return a set that combies (and duplicates) the documents from originals and backups
+# 
 def restore_documents(originals, backups):
-    print("ASDASFASFA")
-    myvar = set(map(str.upper, originals))
-    print(myvar)
-    myvar = set(map(str.upper, backups))
-    print(myvar)
+
+    combined = originals + backups
+
+    combined = set(map(str.upper, combined))
+
+    filtered_list = set(filter(lambda i: not i.isdigit(), combined))
+
+    return filtered_list
+
+
 
 
 run_cases = [
