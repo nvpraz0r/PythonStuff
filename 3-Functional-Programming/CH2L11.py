@@ -18,6 +18,13 @@ def restore_documents(originals, backups):
 
     return filtered_list
 
+    # proposed solution
+    # return set(
+    #     filter(
+    #         lambda doc: not doc.isdigit(),
+    #         map(lambda doc: doc.upper(), originals + backups),
+    #     )
+    # )
 
 
 
