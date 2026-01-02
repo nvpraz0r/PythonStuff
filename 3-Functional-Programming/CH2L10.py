@@ -11,8 +11,11 @@ valid_formats = [
 
 
 def pair_document_with_format(doc_names, doc_formats):
-    merged = zip(doc_names, doc_formats)
-    result = list(filter(lambda i: valid_formats not in i, merged))
+    # way to complicated a solution for me
+    # filtered_list = list(filter(lambda tup: any(item in valid_formats for item in tup), merged))
+
+    merged = list(zip(doc_names, doc_formats))
+    result = list(filter(lambda i: i[1] in valid_formats, merged))
     return result
 
 run_cases = [
