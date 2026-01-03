@@ -33,8 +33,8 @@ submit_cases = run_cases + [
 
 
 def mutate_globals():
-    main_.valid_extensions = ["docx", "txt", "pptx", "ppt", "md"]
-    main_.valid_conversions = {
+    valid_extensions = ["docx", "txt", "pptx", "ppt", "md"]
+    valid_conversions = {
         "docx": ["jpeg"],
         "pdf": ["docx", "txt", "md"],
         "txt": ["docx"],
@@ -50,7 +50,7 @@ def test(input1, input2, expected_output):
     print(f" * filename: {input1}")
     print(f" * target_format: {input2}")
     print(f"Expected: {expected_output}")
-    result = main_.convert_file_format(input1, input2)
+    result = convert_file_format(input1, input2)
     print(f"Actual:   {result}")
     if result == expected_output:
         print("Pass")
