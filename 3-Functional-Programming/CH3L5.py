@@ -1,3 +1,5 @@
+import copy
+
 def add_format(default_formats, new_format):
     default_formats[new_format] = True
     return default_formats
