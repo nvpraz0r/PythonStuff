@@ -1,5 +1,40 @@
+import copy
+
+# create a copy of the memos dict
+# if document exists in memos return the copy of memos and word count
+# otherwise create a word count using word_count(foo)
+# store the word count in the memos copy
+# return the word count and update memos copy
+# def word_count_memo(document, memos):
+#     copied_memos = memos.copy()
+#     if document in copied_memos:
+#         return copied_memos(document), copied_memos
+#     num_of_words = word_count(document)
+#     copied_memos[document] = num_of_words
+#     return num_of_words, copied_memos
+# 
 def word_count_memo(document, memos):
-    pass
+    
+    # copied_memos = memos.copy()
+    
+    # if document not in copied_memos:
+    #     copied_memos[document] = word_count(document)
+    #     return word_count[document], copied_memos
+    # else:
+    #     return copied_memos[document], copied_memos
+
+        new_memos = memos.copy()
+
+        if document in new_memos:
+            return new_memos[document], new_memos
+        
+        new_memos[document] = word_count(document)
+
+        return word_count(document), new_memos
+
+
+
+
 
 
 # Don't edit below this line
