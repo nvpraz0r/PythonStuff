@@ -16,10 +16,9 @@ import copy
 def word_count_memo(document, memos):
     
     # copied_memos = memos.copy()
-    
     # if document not in copied_memos:
     #     copied_memos[document] = word_count(document)
-    #     return word_count[document], copied_memos
+    #     return new_memos[document], copied_memos
     # else:
     #     return copied_memos[document], copied_memos
 
