@@ -1,13 +1,23 @@
 import copy
 
 def add_format(default_formats, new_format):
-    default_formats[new_format] = True
-    return default_formats
+    # old code
+    # default_formats[new_format] = True
+    # return default_formats
+
+    copied = default_formats.copy()
+    copied[new_format] = True
+    return copied
 
 
 def remove_format(default_formats, old_format):
-    default_formats[old_format] = False
-    return default_formats
+    # old code
+    # default_formats[old_format] = False
+    # return default_formats
+
+    copied = default_formats.copy()
+    copied[old_format] = False
+    return copied
 
 
 run_cases = [
