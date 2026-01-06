@@ -1,3 +1,5 @@
+import copy
+
 default_commands = {}
 default_formats = ["txt", "md", "html"]
 saved_documents = {}
@@ -6,22 +8,41 @@ saved_documents = {}
 
 
 def add_custom_command(commands, new_command, function):
-    commands[new_command] = function
-    return commands
+    # old code
+    # commands[new_command] = function
+    # return commands
+
+    copied_commands = commands.copy()
+    copied_commands[new_command] = function
+    return copied_commands
 
 
 def add_format(formats, format):
-    formats.append(format)
-    return formats
+    # old code
+    # formats.append(format)
+    # return formats
+
+    copied_formats = formats.copy()
+    copied_formats.append(format)
+    return copied_formats
 
 
 def save_document(docs, file_name, doc):
-    docs[file_name] = doc
-    return docs
+    # old code
+    # docs[file_name] = doc
+    # return docs
+
+    copied_docs = docs.copy()
+    copied_docs[file_name] = doc
+    return copied_docs
 
 
 def add_line_break(line):
-    print(line + "\n\n")
+    # old code
+    # print(line + "\n\n")
+
+    return line + "\n\n"
+
 
 # 
 # 
