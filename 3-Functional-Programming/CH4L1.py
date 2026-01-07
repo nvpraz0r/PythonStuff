@@ -3,11 +3,10 @@
 # 5! = 5 * 4 * 3 * 2 * 1 = 120
 # 
 def factorial_r(x):
-
-    if x == 0:
-        return sum
-    x *= (x - 1)
-    return factorial_r(x)
+    if x == 1:
+        return 1
+    else:
+        return x * factorial_r(x - 1)
 
 
 run_cases = [
