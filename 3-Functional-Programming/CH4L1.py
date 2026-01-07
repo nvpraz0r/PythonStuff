@@ -1,6 +1,9 @@
 # n! = n * (n - 1) * (n - 2) * (n - 3) . . .
 #    = n * (n - 1)!
+# 5! = 5 * 4 * 3 * 2 * 1 = 120
+# 
 def factorial_r(x):
+
     if x == 0:
         return sum
     x *= (x - 1)
