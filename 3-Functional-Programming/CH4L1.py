@@ -1,5 +1,10 @@
+# n! = n * (n - 1) * (n - 2) * (n - 3) . . .
+#    = n * (n - 1)!
 def factorial_r(x):
-    pass
+    if x == 0:
+        return sum
+    x *= (x - 1)
+    return factorial_r(x)
 
 
 run_cases = [
