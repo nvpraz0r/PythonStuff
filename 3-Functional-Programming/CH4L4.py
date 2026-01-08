@@ -1,4 +1,18 @@
+# pseudocode
+# 
+# 1. If either the keys or values list is empty, return an empty dictionary (base case).
+#    This takes care of creating a dictionary
+# 2. Recursively call zipmap on all but the first elements from keys and values.
+# 3. Add the first element of keys to the resulting dictionary, and set its value to the first element in values
+# 4. Return the updated dictionary
 def zipmap(keys, values):
+    result = {}
+    if len(keys) == 0 or len(values) == 0:
+        result = {}
+        return result
+    
+    
+
     pass
 
 run_cases = [
