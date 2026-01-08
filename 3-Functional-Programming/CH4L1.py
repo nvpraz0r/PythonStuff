@@ -3,11 +3,12 @@
 # 5! = 5 * 4 * 3 * 2 * 1 = 120
 # 
 def factorial_r(x):
-    if x == 1:
+    # 1. base case - stopping condition
+    if x <= 1:
         return 1
-    else:
-        return x * factorial_r(x - 1)
-
+    # 2. recursive case - call the function again
+    # 3. progress towards the base case
+    return x * factorial_r(x - 1)
 
 run_cases = [
     (3, 6),
