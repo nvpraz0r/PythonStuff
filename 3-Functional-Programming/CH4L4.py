@@ -6,14 +6,18 @@
 # 3. Add the first element of keys to the resulting dictionary, and set its value to the first element in values
 # 4. Return the updated dictionary
 def zipmap(keys, values):
-    result = {}
-    if len(keys) == 0 or len(values) == 0:
-        result = {}
-        return result
-    
-    
 
-    pass
+    # if keys or values ar empty return an empty dict
+    if not keys or not values:
+        return {}
+    else:
+        first_key = keys[0]
+        first_value = values[0]
+        remaining_zipped = zipmap(keys[1:], values[1:])
+
+        remaining_zipped[first_key] = first_value
+        return remaining_zipped
+
 
 run_cases = [
     (
