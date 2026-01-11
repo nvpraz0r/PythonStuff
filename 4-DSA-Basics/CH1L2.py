@@ -1,5 +1,14 @@
 def find_minimum(nums):
-    pass
+    min = float("inf")
+
+    if len(nums) == 0:
+        return None
+    
+    for i in nums:
+        if i < min:
+            min = i
+    
+    return min
 
 
 run_cases = [
