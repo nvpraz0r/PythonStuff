@@ -23,7 +23,7 @@ def get_estimated_spread(audiences_followers):
 
     # determine the estimated spread
     # estimated spread is equal to the average num of followers the followers have
-    # multiplied by the num of followers to the exponent of 1.2
+    # multiplied by the num of followers to the power of 1.2
     estimated_spread = avg_audience_followers * (num_followers ** 1.2)
 
     # 
