@@ -1,5 +1,22 @@
 def average_followers(nums):
-    pass
+
+    num_of_elements = len(nums)
+
+    # easy out
+    if num_of_elements == 0:
+        return None
+    # easy out
+    if num_of_elements == 1:
+        return nums[0]
+    
+    sum = 0
+
+    for i in nums:
+        sum += i
+
+    avg = sum / num_of_elements
+
+    return avg
 
 
 run_cases = [
