@@ -1,5 +1,34 @@
+# estimated_spread = average_audience_followers * ( num_followers ^ 1.2 )
+# avg_audience_followers = sum of the elements divided by the number of elements in the array
+# num_followers = number of elements in the array
 def get_estimated_spread(audiences_followers):
-    pass
+
+    # determine the amount of followers
+    # num of followers is equal to the amount of elements in the array
+    num_followers = len(audiences_followers)
+
+    # easy out
+    if num_followers == 0:
+        return 0
+    
+    # determine the amount of followers the followers have
+    # audience followers is equal to the sum of the elements in the array
+    sum = 0
+    for i in audiences_followers:
+        sum += i
+
+    # determine the average number of followers the followers have
+    # average is equal to the sum divided by the number of followers
+    avg_audience_followers = sum / num_followers
+
+    # determine the estimated spread
+    # estimated spread is equal to the average num of followers the followers have
+    # multiplied by the num of followers to the exponent of 1.2
+    estimated_spread = avg_audience_followers * (num_followers ** 1.2)
+
+    # 
+    return estimated_spread
+
 
 
 run_cases = [
