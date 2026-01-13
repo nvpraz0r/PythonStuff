@@ -1,6 +1,11 @@
+# time complexity restrictions: ???
 def does_name_exist(first_names, last_names, full_name):
-    pass
-
+    for i in first_names:
+        for j in last_names:
+            name = i + " " + j
+            if name == full_name:
+                return True
+    return False
 
 
 run_cases = [
