@@ -4,6 +4,7 @@ def does_name_exist(first_names, last_names, full_name):
         for j in last_names:
             name = i + " " + j
             if name == full_name:
+            # if f"{i} {j}" == full_name: ALTERNATIVE
                 return True
     return False
 

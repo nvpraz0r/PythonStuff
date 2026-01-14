@@ -8,3 +8,8 @@ O(n) - linear
 O(n ^ 2) - squared
 O(2 ^ n) - exponential
 O(n!) - factorial
+
+
+
+O(n) == 1 for-loop
+O(n ^ 2) == 2 for-loop
