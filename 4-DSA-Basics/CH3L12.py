@@ -16,8 +16,8 @@ def binary_search(target, arr):
             return True
         elif arr[median] < target:
             low = median + 1
-
-        high = median - 1
+        else:
+            high = median - 1
 
     return False
 
