@@ -11,5 +11,7 @@ O(n!) - factorial
 
 
 
+O(1) == no matter the size of the input there is no growth in the runtime of the algorithm
+
 O(n) == 1 for-loop
 O(n ^ 2) == 2 for-loop
