@@ -8,7 +8,6 @@ def count_names(list_of_lists, target_name):
             if target_name in name:
                 num += 1
 
-
     return num
 
 
