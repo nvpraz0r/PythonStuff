@@ -1,6 +1,15 @@
 # 
 def count_names(list_of_lists, target_name):
-    pass
+
+    num = 0
+
+    for names in list_of_lists:
+        for name in names:
+            if target_name in name:
+                num += 1
+
+
+    return num
 
 
 run_cases = [
