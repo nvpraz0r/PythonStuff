@@ -7,18 +7,28 @@ class Influencer:
         return f"({self.num_selfies}, {self.num_bio_links})"
 
 # return vanity score
-# vanity score = the number links in bio multiplied by 5
-# plus the number of selfies
+# vanity score = the number links in bio multiplied by 5 plus the number of selfies
 def vanity(influencer):
-    pass
+    return  (influencer.num_bio_links * 5) + influencer.num_selfies
 
 # return a list of influences
-# sorted by their vanity from least to greatest
+# sort them based on their vanity score from least to greatest
 # sorted(x) -
 def vanity_sort(influencers):
-    pass
 
+    myarr = []
 
+    for i in influencers:
+        vanity(i)
+        myarr.append(i)
+
+    print(myarr)
+
+    sorted(myarr, key=lambda influencer: influencer.)
+
+    return myarr
+
+# # # # #
 
 theprimeagen = Influencer(100, 1)
 pokimane = Influencer(800, 2)
