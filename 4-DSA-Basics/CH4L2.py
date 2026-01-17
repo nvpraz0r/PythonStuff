@@ -28,7 +28,7 @@ def bubble_sort(nums):
     # return sorted list
     return nums
 
-
+# still trying to figure out how this is supposed to be implemented
 def confusing_bubble_sort(nums):
 
     swapping = True
