@@ -29,6 +29,21 @@ def bubble_sort(nums):
     return nums
 
 
+def confusing_bubble_sort(nums):
+
+    swapping = True
+    end = len(nums)
+
+    while swapping:
+        swapping = False
+        for i in range(2, end):
+            if nums[i - 1] > nums[i]:
+                nums[i - 1], nums[i] = nums[i], nums[i - 1]
+                swapping = True
+        end -= 1
+    return nums
+
+
 run_cases = [
     ([5, 7, 3, 6, 8], [3, 5, 6, 7, 8]),
     ([2, 1], [1, 2]),
