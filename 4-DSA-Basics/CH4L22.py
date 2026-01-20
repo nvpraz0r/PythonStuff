@@ -1,7 +1,18 @@
 def selection_sort(nums):
-    
 
-
+    # for each index
+    for i in range(len(nums)):
+        # set smallest_idx to the current index
+        smallest_idx = i
+        # for each index from i + 1 to the end of the list
+        for j in range(i + 1, len(nums)):
+            # if the number at the inner index is smaller than the number at "smallest_idx"
+            if nums[j] < nums[smallest_idx]:
+                # set "smallest_idx" to the inner index
+                smallest_idx = j
+        # swap the number at the outer loop index with the number at "smallest_idx"
+        nums[i], nums[smallest_idx] = nums[smallest_idx], nums[i]
+    # return the sorted list
     return nums
 
 
