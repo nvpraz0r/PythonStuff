@@ -20,4 +20,5 @@ O(n ^ 2) == 2 for-loop
 Algorithm Time Complexity:
 - merge sort        -> O(n log n) 
 - insertion sort    -> O(n^2): best used in small data sets that are "semi-sorted"
-- quick sort        -> O(n * log(n)): 
+- quick sort        -> O(n * log(n))
+- selection sort    ->
