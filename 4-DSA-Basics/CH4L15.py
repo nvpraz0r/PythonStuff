@@ -2,11 +2,38 @@ import time
 
 
 def quick_sort(nums, low, high):
-    pass
+
+    # if "low" is less than "high"
+    if low < high:
+        # partition the input list using the partition function
+        # store the returned "middle" index
+        p = partition(nums, low, high)
+        # recursively call "quick_sort" on the left side of the partition
+        quick_sort(nums, low, p - 1)
+        # recursively call "quick_sort" on the right side of the partition
+        quick_sort(nums, p + 1, high)
+    # 
+    return nums
 
 
 def partition(nums, low, high):
-    pass
+    # set "pivot" to the element at index "high"
+    pivot = nums[high]
+    # set "i" to the index before "low"
+    i = low
+
+    # for each index "j" from "low" to "high"
+    for j in range(low, high):
+        # if the element at index "j" is less than the "pivot"
+        if nums[j] < pivot:
+            # swap the element at index "i" with the element at index "j"
+            nums[i], nums[j] = nums[j], nums[i]
+            # increment "i" by "1"
+            i += 1
+    # swap the element to the right of "i" with the element at the index "high"(the pivot's position)
+    nums[i], nums[high] = nums[high], nums[i]
+    # return the new index of the "pivot" element (the item in the middle of the partition)
+    return i
 
 
 # 

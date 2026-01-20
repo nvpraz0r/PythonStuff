@@ -17,5 +17,7 @@ O(n) == 1 for-loop
 O(n ^ 2) == 2 for-loop
 
 
-
-insertion sort used in small data sets that are "semi-sorted"
+Algorithm Time Complexity:
+- merge sort        -> O(n log n) 
+- insertion sort    -> O(n^2): best used in small data sets that are "semi-sorted"
+- quick sort        -> O(n * log(n)): 
