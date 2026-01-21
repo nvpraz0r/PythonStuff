@@ -28,3 +28,16 @@ Algorithm Time Complexity:
 - insertion sort    -> O(n^2): best used in small data sets that are "semi-sorted"
 - quick sort        -> O(n * log(n))
 - selection sort    ->
+
+---
+
+Algorithms can be classified into two categories:
+- Polynomial
+  - O(1)
+  - O(n)
+  - O(n * log(n))
+  - O(n ^ x)
+- Exponential
+  - O(x ^ n)
+  - O(n ^ n)
+  - O(n!)
