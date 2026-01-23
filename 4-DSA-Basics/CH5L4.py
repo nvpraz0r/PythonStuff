@@ -15,7 +15,7 @@ def power_set(input):
         # for each "subset" in "all_subsets"
         for subset in all_subsets:
             # create a new subset that contains all the elements of "subset" plus the current element
-            
+
             # append the "new_subset" to the "new_subsets"
 
         # after the inner loop use extend to add "new_subsets" to "all_subsets"
