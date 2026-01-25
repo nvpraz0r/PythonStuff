@@ -1,14 +1,16 @@
-def exponential_growth(initial, factor, days):
+def exponential_growth(starting_num, factor, iterations):
     growth_sequence = []
 
-    growth_sequence.append(initial)
+    growth_sequence.append(starting_num)
+    
+    var = 0
 
-    for i in range(days):
-        calculate_growth = 0
-        for j in range(i):
-            calculate_growth = (initial * factor)
+    for i in range(iterations):
+        var = starting_num * (factor * i)
+        print(f"printing var: {var}")
+        print(f"printing i: {i}")
+        growth_sequence.append(var)
 
-        growth_sequence.append(calculate_growth)
 
     return growth_sequence
 
