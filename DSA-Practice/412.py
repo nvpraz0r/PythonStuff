@@ -1,5 +1,14 @@
 def fizz_buzz(n: int) -> List[str]:
+    """
+    Docstring for fizz_buzz
     
+    :param n: Description
+    :type n: int
+    :return: Description
+    :rtype: Any
+    """
+    
+    # internal array
     result = []
 
     # 
