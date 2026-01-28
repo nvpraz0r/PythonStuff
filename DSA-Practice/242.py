@@ -1,4 +1,9 @@
-def isAnagram(self, s: str, t: str) -> bool:
+# 242. Valid Anagram
+#
+# given two strings "s" and "t" return true
+# if "t" is an anagram of "s", and false otherwise
+#
+def isAnagram( s: str, t: str) -> bool:
     """
     Docstring for isAnagram
     
@@ -30,7 +35,10 @@ def isAnagram(self, s: str, t: str) -> bool:
 
 
 def main():
-    isAnagram()
+    s = "anagram"
+    t = "nagaram"
+    result = isAnagram(s, t)
+    print(result)
 
 
 if __name__ == '__main__':

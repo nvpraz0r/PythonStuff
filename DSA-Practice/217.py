@@ -1,4 +1,10 @@
-def containsDuplicate(self, nums: List[int]) -> bool:
+# 217. Contains Duplicate
+#
+# given an integer array nums, return true if any
+# value appears at least twice in the array and
+# return false if every element is distinct
+#
+def containsDuplicate(nums: List[int]) -> bool:
     """
     Docstring for containsDuplicate
     
@@ -25,7 +31,8 @@ def containsDuplicate(self, nums: List[int]) -> bool:
 
 
 def main():
-    containsDuplicate()
+    nums = [1,2,3,1]
+    containsDuplicate(nums)
 
 
 if __name__ == '__main__':
