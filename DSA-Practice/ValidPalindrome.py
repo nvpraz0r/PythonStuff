@@ -8,6 +8,13 @@
 # Given the string "s" return "true" if it is a palindrome or "false" otherwise
 #
 def isPalindrome(s: str) -> bool:
+    """
+    Time:    
+    :param s: Description
+    :type s: str
+    :return: Description
+    :rtype: bool
+    """
 
     if s == " ":
         return True
@@ -26,6 +33,13 @@ def isPalindrome(s: str) -> bool:
 
     return True
 
+
+def improvedIsPalindrome(s: str) -> bool:
+    result = ''
+    for c in s:
+        if c.isalnum():
+            result += c.lower()
+    return result == result[::-1]
 
 def main():
     result = isPalindrome("anna")
