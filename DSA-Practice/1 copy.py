@@ -1,10 +1,8 @@
-# 1. Two sum
+# X. Lorem Ipsum
 #
-# given an array of integers and an integer, return indices
-# of the two numbers such that they add up to target
+# lorem ipsum dolor sit amet
 #
-# you may assume that each input would have exactly one solution
-# and you may not use the same element twice
+# lorem ipsum dolor sit amet
 #
 def twoSumBruteForce(nums: List[int], target: int) -> List[int]:
     """
