@@ -1,6 +1,16 @@
 def count_marketers(job_titles):
-    pass
+    """
+    Time Complexity: O(n)    
+    :param job_titles: Description
+    """
 
+    count = 0
+
+    for i in job_titles:
+        if i.lower() == "marketer":
+            count += 1
+
+    return count
 
 
 run_cases = [
