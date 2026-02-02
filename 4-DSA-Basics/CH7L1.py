@@ -5,8 +5,8 @@ class Stack:
     def push(self, item):
         self.items.append(item)
 
-    def size(self):
-        return len(self.items) - 1
+    def size(self) -> int:
+        return len(self.items)
 
 
 
