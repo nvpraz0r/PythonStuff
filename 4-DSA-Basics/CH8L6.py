@@ -12,7 +12,7 @@ def matchmake(queue, user):
     # if the action is "join"
     # push the user onto the queue
     if user[1] == "join":
-        q.push(user)
+        q.push(user[0])
 
     # check if the queue has at least 4 users
     # if so, pop the first 2 users from the queue
