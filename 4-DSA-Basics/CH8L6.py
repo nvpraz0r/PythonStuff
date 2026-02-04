@@ -1,30 +1,30 @@
 def matchmake(queue, user):
 
     # create Queue class instance
-    q = Queue()
+    # q = Queue()
 
     # if the action is "leave"
     # search the queue for the user
     # remove the user if they are in the queue
     if user[1] == "leave":
-        q.search_and_remove(user)
+        queue.search_and_remove(user[0])
     
     # if the action is "join"
     # push the user onto the queue
     if user[1] == "join":
-        q.push(user[0])
+        queue.push(user[0])
 
     # check if the queue has at least 4 users
     # if so, pop the first 2 users from the queue
     # return "{user1} matched {user2}!"
-    if q.size == 4:
-        user1 = q.pop()
-        user2 = q.pop()
-        return (f"{user1} matched {user2}!")
+    if queue.size() == 4: # was missing "()" on queue.size preventing the if statement from functioning
+        user1 = queue.pop()
+        user2 = queue.pop()
+        return f"{user1} matched {user2}!"
 
     # if there were less than 4 users in the queue
     # return "No match found"
-    if q.size() < 4:
+    if queue.size() < 4:
         return "No match found"
 
     # return the queue
