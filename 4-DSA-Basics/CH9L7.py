@@ -5,6 +5,8 @@ class LinkedList:
     def add_to_head(self, node):
         node.set_next(self.head)
         self.head = node
+        if self.head is None:
+            self.tail = node
 
     def add_to_tail(self, node):
         if self.head is None:
@@ -17,6 +19,7 @@ class LinkedList:
 
     def __init__(self):
         self.head = None
+        self.tail = None
 
     # don't touch below this line
 
