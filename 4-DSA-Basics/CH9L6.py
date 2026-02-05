@@ -1,6 +1,9 @@
 class LinkedList:
     def add_to_head(self, node):
-        pass
+        # set the "next" field of the parameter "node" to the current head node
+        node.next = self.head
+        # update the "head" reference to the parameter "node"
+        self.head = node
 
     # don't touch below this line
 
