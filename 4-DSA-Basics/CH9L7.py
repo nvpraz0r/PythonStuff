@@ -28,13 +28,18 @@ class LinkedList:
 
     # 3.
     def add_to_tail(self, node):
+        #
         if self.head is None:
             self.head = node
+            # 3a. set head AND tail to the given node if the list is empty
+            self.tail = node
             return
         last_node = None
-        for current_node in self:
-            last_node = current_node
-        last_node.set_next(node)
+        # for current_node in self:
+        #     last_node = current_node
+        self.tail.set_next(node)
+        # last_node.set_next(node)
+        self.tail = node
 
     # don't touch below this line
 
