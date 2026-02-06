@@ -34,7 +34,7 @@ class LinkedList:
             # 3a. set head AND tail to the given node if the list is empty
             self.tail = node
             return
-        last_node = None
+        # last_node = None
         # for current_node in self:
         #     last_node = current_node
         self.tail.set_next(node)
