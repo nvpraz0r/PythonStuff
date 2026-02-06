@@ -1,13 +1,32 @@
 import random
 import time
 
+
+# 1. update the constructor to set "self.tail" to "None"
+# 2. update "add_to_head" to also set the "tail" reference to the given node if the list is empty
+# 3. update "add_to_tail"
+#   a. set the head AND tail to the given node if the list is empty
+#   b. instead of iterating through the list to find the last node use
+#   the "tail" node to append the new node (set "self.tail.next" to the new node)
+#   c. update hte tail reference to the new node
+
 class LinkedList:
+
+    # 1.
+    def __init__(self):
+        self.head = None
+        # 1. set "self.tail" to None
+        self.tail = None
+
+    # 2.
     def add_to_head(self, node):
         node.set_next(self.head)
         self.head = node
+        # 2. set "tail" reference to the given node if the list is empty
         if self.head is None:
             self.tail = node
 
+    # 3.
     def add_to_tail(self, node):
         if self.head is None:
             self.head = node
@@ -16,10 +35,6 @@ class LinkedList:
         for current_node in self:
             last_node = current_node
         last_node.set_next(node)
-
-    def __init__(self):
-        self.head = None
-        self.tail = None
 
     # don't touch below this line
 
