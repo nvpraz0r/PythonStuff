@@ -1,7 +1,20 @@
 
 class LLQueue:
     def remove_from_head(self):
-        pass
+        # 1. if the list is empty return None
+        if self.head == None:
+            return None
+        # 2. assign the head to be removed to a variable
+        tmp = self.head
+        # 3. set the list's head to the next node in the list
+        self.head = self.head.next
+        # 4. if the list became empty set the list's tail to None
+        if self.head == None:
+            self.tail = None
+        # 5. set the (now removed) head's next to None
+        self.head = None
+        # 6. return the removed head
+        return tmp
 
     # don't touch below this line
 
