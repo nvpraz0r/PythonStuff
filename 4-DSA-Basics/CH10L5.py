@@ -9,14 +9,22 @@ class BSTNode:
 
     def insert(self, val):
         # 1. if the node doesn't have a value, use the given value
+        if self.val == None:
+            self.val = val
         # 2. if the node is EQUAL to the given value, just be done, no duplicates allowed
+        if self.val == val:
+            return
         # 3. if the given value is less than the node's value and the node DOESNT have a 
-        # left child creat a new left child node with the given value
+        # left child create a new left child node with the given value
+        if val < self.val and self.left == None:
+            self.left = val
         # 4. if the given value is less than the node's value and the node DOES have a left
         # child, recursively call insert off of that left child with the given value
+
         # 5. since we already checked if the given value is equal to or less than the node
         # the value must be greater than the node. Handle whether or not the node already has
         # a right child
+
         pass
 # 
 # 
