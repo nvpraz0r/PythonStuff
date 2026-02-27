@@ -11,6 +11,7 @@ class BSTNode:
         # 1. if the node doesn't have a value, use the given value
         if self.val == None:
             self.val = val
+            return
         # 2. if the node is EQUAL to the given value, just be done, no duplicates allowed
         if self.val == val:
             return
@@ -20,7 +21,7 @@ class BSTNode:
             self.left = val
         # 4. if the given value is less than the node's value and the node DOES have a left
         # child, recursively call insert off of that left child with the given value
-
+        
         # 5. since we already checked if the given value is equal to or less than the node
         # the value must be greater than the node. Handle whether or not the node already has
         # a right child
