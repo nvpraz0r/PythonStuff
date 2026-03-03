@@ -1,5 +1,10 @@
 def get_logger(formatter):
-    pass
+    # 1 define a new function "logger" inside "get_logger"
+    # "logger" accepts two strings
+    def logger(first, second):
+        print(f"{first} {second}")
+
+    return logger
 
 
 # Don't edit below this line
