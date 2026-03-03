@@ -2,8 +2,12 @@ def get_logger(formatter):
     # 1 define a new function "logger" inside "get_logger"
     # "logger" accepts two strings
     def logger(first, second):
-        print(f"{first} {second}")
+        # 2 logger function should not return anything
+        # it should print the result of calling the given formatter function
+        # with the first and second strings as arguments
+        print(formatter(first, second))
 
+    # 3 return logger function
     return logger
 
 
