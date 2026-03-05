@@ -8,8 +8,8 @@ def doc_format_checker_and_converter(conversion_function, valid_formats):
 
     print("ASDF")
 
-    conversion = conversion_function.split()
-    # print(conversion)
+    myvar = conversion_function.split() # I have no idea why nothing is printing beneath this
+    print(myvar)
     print(conversion_function)
     print(valid_formats)
 
