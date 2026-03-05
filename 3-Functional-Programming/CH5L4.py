@@ -4,8 +4,16 @@ def doc_format_checker_and_converter(conversion_function, valid_formats):
     # on the content
 
     # 2 otherwise it should raise a ValueError with the message "invalid file format"
-    
-    pass
+
+
+    print("ASDF")
+
+    conversion = conversion_function.split()
+    # print(conversion)
+    print(conversion_function)
+    print(valid_formats)
+
+    print("why is this line not printing")
 
 
 # Don't edit below this line
