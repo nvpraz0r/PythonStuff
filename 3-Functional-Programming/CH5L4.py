@@ -10,7 +10,7 @@ def doc_format_checker_and_converter(conversion_function, valid_formats):
 
     myvar = conversion_function.split() # I have no idea why nothing is printing beneath this
     print(myvar)
-    print(conversion_function)
+    print(conversion_function[1])
     print(valid_formats)
 
     print("why is this line not printing")
