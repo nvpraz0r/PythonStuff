@@ -1,6 +1,20 @@
-import random, sys, time
+# misc learning
 
 
+stuff = ['lorem','ipsum','foo','bar','bash']
+
+# enumerate() can be used in lue of range(len(some_list))
+for index, word in enumerate(stuff):
+    print(f"{index}: {word}")
+
+
+
+
+
+
+
+
+# import random, sys, time
 # WIDTH = 60
 
 # try:
@@ -20,10 +34,3 @@ import random, sys, time
 
 # except KeyboardInterrupt:
 #     sys.exit()
-
-
-stuff = ['lorem','ipsum','foo','bar','bash']
-
-# enumerate() can be used in lue of range(len(some_list))
-for index, word in enumerate(stuff):
-    print(f"{index}: {word}")
